@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  app:
+    image: ${DOCKER_REGISTRY-}webapplicationlab
+    build:
+      context: .
+      dockerfile: WebApplicationLab/Dockerfile
+  app2:
+    image: ${DOCKER_REGISTRY-}webapplicationlab
+    build:
+      context: .
+      dockerfile: WebApplicationLab/Dockerfile
+
+  proxy:
+    image: nginx:mainline
+
