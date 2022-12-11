@@ -1,0 +1,10 @@
+C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\bin\Debug\netcoreapp3.1\DotNetCore.AWS.Services.deps.json
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\bin\Debug\netcoreapp3.1\DotNetCore.AWS.Services.dll
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\bin\Debug\netcoreapp3.1\DotNetCore.AWS.Services.pdb
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\obj\Debug\netcoreapp3.1\DotNetCore.AWS.Services.csproj.AssemblyReference.cache
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\obj\Debug\netcoreapp3.1\DotNetCore.AWS.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\obj\Debug\netcoreapp3.1\DotNetCore.AWS.Services.AssemblyInfoInputs.cache
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\obj\Debug\netcoreapp3.1\DotNetCore.AWS.Services.AssemblyInfo.cs
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\obj\Debug\netcoreapp3.1\DotNetCore.AWS.Services.csproj.CoreCompileInputs.cache
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\obj\Debug\netcoreapp3.1\DotNetCore.AWS.Services.dll
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\DotNetCore.AWS.Services\obj\Debug\netcoreapp3.1\DotNetCore.AWS.Services.pdb

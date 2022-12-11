@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationLab", "WebApplicationLab\WebApplicationLab.csproj", "{1D4851D0-17A4-4D8F-8C1A-E48F3CD770F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationLab", "WebApplicationLab\WebApplicationLab.csproj", "{1D4851D0-17A4-4D8F-8C1A-E48F3CD770F5}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1CA66AE8-BD6A-4AD3-B323-53AFE8D58BA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.YC.Reader", "Json.YC.Reader\Json.YC.Reader.csproj", "{85143091-1B70-47D0-A892-8F56B0E15967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1CA66AE8-BD6A-4AD3-B323-53AFE8D58BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA66AE8-BD6A-4AD3-B323-53AFE8D58BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CA66AE8-BD6A-4AD3-B323-53AFE8D58BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85143091-1B70-47D0-A892-8F56B0E15967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85143091-1B70-47D0-A892-8F56B0E15967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85143091-1B70-47D0-A892-8F56B0E15967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85143091-1B70-47D0-A892-8F56B0E15967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

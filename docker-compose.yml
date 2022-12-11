@@ -1,17 +1,16 @@
 version: '3.4'
 
 services:
-  app:
+  backend  :
     image: ${DOCKER_REGISTRY-}webapplicationlab
     build:
       context: .
       dockerfile: WebApplicationLab/Dockerfile
-  app2:
-    image: ${DOCKER_REGISTRY-}webapplicationlab
+  client:
+    image: client
     build:
-      context: .
-      dockerfile: WebApplicationLab/Dockerfile
-
+      context: ./EmberApp
+      dockerfile: Dockerfile
   proxy:
     image: nginx:mainline
 

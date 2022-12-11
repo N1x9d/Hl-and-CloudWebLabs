@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7Cl9IYmea/fG3xcZq3mbrUc7oTiCPVUaJ/HqmZSzy9bjohn7g7CnMmnViXiHFohCxy2iBHL/8o9a2DqWRip1uA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\DotNetCore.AWS.Services\\DotNetCore.AWS.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\N1x9d\\.nuget\\packages\\awssdk.core\\3.7.5.13\\awssdk.core.3.7.5.13.nupkg.sha512",
+    "C:\\Users\\N1x9d\\.nuget\\packages\\awssdk.s3\\3.7.7.11\\awssdk.s3.3.7.7.11.nupkg.sha512",
+    "C:\\Users\\N1x9d\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.13\\microsoft.aspnetcore.http.features.5.0.13.nupkg.sha512",
+    "C:\\Users\\N1x9d\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\N1x9d\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\N1x9d\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

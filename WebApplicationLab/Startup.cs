@@ -1,15 +1,10 @@
+using AspNetCore.Yandex.ObjectStorage.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WebApplicationLab
 {
@@ -25,7 +20,12 @@ namespace WebApplicationLab
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddYandexObjectStorage(options =>
+            {
+                options.BucketName = "backetpstu";
+                options.AccessKey = "YCAJEmsJEATFxYBeOyWr3rVnZ";
+                options.SecretKey = "YCPzukDhVosMHTnNA6aBI43cB1w8H2YSr5KNqWEK";
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -39,13 +39,20 @@ namespace WebApplicationLab
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApplicationLab v1"));
             }
+
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "DotNet_AWS");
+            });
 
             app.UseEndpoints(endpoints =>
             {
