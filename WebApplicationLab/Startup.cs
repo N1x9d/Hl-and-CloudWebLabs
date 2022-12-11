@@ -10,6 +10,7 @@ namespace WebApplicationLab
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -20,6 +21,15 @@ namespace WebApplicationLab
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  policy =>
+                                  {
+                                      policy.WithOrigins("http://localhost:5001", "http://localhost:5050").AllowAnyHeader()
+                                                  .AllowAnyMethod();
+                                  });
+            });
             services.AddYandexObjectStorage(options =>
             {
                 options.BucketName = "backetpstu";
@@ -40,6 +50,8 @@ namespace WebApplicationLab
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseHttpsRedirection();
 

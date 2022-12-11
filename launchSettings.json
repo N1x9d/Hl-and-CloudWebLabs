@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchAction": "None",
+      "composeLaunchServiceName": "backend",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "backend": "StartDebugging",
+        "client": "StartWithoutDebugging",
+        "proxy": "StartWithoutDebugging"
+      }
+    }
+  }
+}

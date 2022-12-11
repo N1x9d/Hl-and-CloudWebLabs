@@ -17,8 +17,18 @@
     </div>
   {{else}}
   <ul class="collection">
-    {{#each model as |Image|}}
-      {{author-item Name=Image.ImageName images=Image.ImageLinc tagName='li'}}
+    {{#each model.pictures as |Image|}}
+      <li>
+        <div class="sr-only">Add new Author{{Image.imageName}}</div>
+      <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src={{Image.imageLinc}} alt={{Image.imageNam}} height="200px" width="auto"/>
+  <div class="card-body">
+    
+   <div class="sr-only">Add new Author{{Image.imageName}}</div>
+
+  </div>
+</div>
+</li> 
     {{/each}}
   </ul>
   {{/if}}
