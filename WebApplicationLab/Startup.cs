@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using StackExchange.Redis;
 
 namespace WebApplicationLab
 {
@@ -30,6 +31,8 @@ namespace WebApplicationLab
                                                   .AllowAnyMethod();
                                   });
             });
+           // services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost"));
+            services.AddHttpClient();
             services.AddYandexObjectStorage(options =>
             {
                 options.BucketName = "backetpstu";
