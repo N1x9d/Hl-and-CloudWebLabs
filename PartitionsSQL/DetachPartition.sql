@@ -1,0 +1,1 @@
+ALTER TABLE dump_table_test DETACH PARTITION dumps_table_test_y2019;
