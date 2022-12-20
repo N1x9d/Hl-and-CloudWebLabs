@@ -1,0 +1,46 @@
+name: dockercompose13902471660767451278
+services:
+  backend:
+    build:
+      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs
+      dockerfile: WebApplicationLab/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: webapplicationlab
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5050"
+      protocol: tcp
+  client:
+    build:
+      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\EmberApp
+      dockerfile: Dockerfile
+    image: client
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 4200
+      published: "5001"
+      protocol: tcp
+  proxy:
+    image: nginx:mainline
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "80"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\nginx.conf
+      target: /etc/nginx/nginx.conf
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose13902471660767451278_default
