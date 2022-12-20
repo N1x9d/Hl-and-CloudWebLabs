@@ -1,0 +1,55 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "images": 
+      [
+        {
+          "src": "https://i.artfile.ru/2880x1920_1060646_[www.ArtFile.ru].jpg",
+          "name": "p1"
+        },
+        {
+          "src": "https://storage.yandexcloud.net/backetpstu/NFS16_2017-01-25_18-54-12-59.jpg",
+          "name": "p1"
+        }
+      ],
+      "firstName": "Robert",
+      "lastName": "Martin"
+    },
+    {
+      "id": 2,
+      "firstName": "C.S",
+      "lastName": "Lewis"
+    },
+    {
+      "id": 3,
+      "firstName": "Edgar",
+      "lastName": "Por"
+    },
+    {
+      "firstName": "Lev",
+      "lastName": "Tolstoy",
+      "id": 4
+    },
+    {
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "id": 5
+    },
+    {
+      "firstName": "Sergey",
+      "lastName": "Sergeev",
+      "id": 6
+    },
+    {
+      "firstName": "Konstantin",
+      "lastName": "Petrov",
+      "id": 7
+    },
+    {
+      "firstName": "Mikhail",
+      "lastName": "Lermontov",
+      "id": 8
+    }
+  ]
+}
