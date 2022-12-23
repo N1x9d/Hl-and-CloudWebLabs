@@ -1,17 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerComposeProjectPath>.\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Json.YC.Reader\**" />
-    <Content Remove="Json.YC.Reader\**" />
-    <EmbeddedResource Remove="Json.YC.Reader\**" />
-    <None Remove="Json.YC.Reader\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.Yandex.ObjectStorage" Version="0.2.2" />
@@ -30,8 +23,11 @@
     <PackageReference Include="System.Net.Http.Json" Version="7.0.0" />
   </ItemGroup>
 
+
   <ItemGroup>
-    <ProjectReference Include="Json.YC.Reader\Json.YC.Reader.csproj" />
+    <Reference Include="Json.YC.Reader">
+      <HintPath>..\Json.YC.Reader\bin\Debug\Json.YC.Reader.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

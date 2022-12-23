@@ -430,11 +430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\WebApplicationLab\\WebApplicationLab.csproj",
+      "projectUniqueName": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\Hiload\\WebApplicationLab\\WebApplicationLab.csproj",
       "projectName": "WebApplicationLab",
-      "projectPath": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\WebApplicationLab\\WebApplicationLab.csproj",
+      "projectPath": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\Hiload\\WebApplicationLab\\WebApplicationLab.csproj",
       "packagesPath": "C:\\Users\\N1x9d\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\WebApplicationLab\\obj\\",
+      "outputPath": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\Hiload\\WebApplicationLab\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

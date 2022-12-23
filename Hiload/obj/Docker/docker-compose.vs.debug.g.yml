@@ -14,8 +14,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\WebApplicationLab:/app
-      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs:/src
+      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload\WebApplicationLab:/app
+      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload:/src
       - C:\Users\N1x9d\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\N1x9d\.nuget\packages\:/root/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
@@ -42,8 +42,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\WebApplicationLab:/app
-      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs:/src
+      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload\WebApplicationLab:/app
+      - C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload:/src
       - C:\Users\N1x9d\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\N1x9d\.nuget\packages\:/root/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro

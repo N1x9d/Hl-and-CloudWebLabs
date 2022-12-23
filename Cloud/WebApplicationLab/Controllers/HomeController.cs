@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using AspNetCore.Yandex.ObjectStorage.Object.Responses;
 using AspNetCore.Yandex.ObjectStorage;
 using System.IO;
-using System;
 using Nancy.Json;
 
 namespace WebApplicationLab.Controllers
@@ -37,7 +36,6 @@ namespace WebApplicationLab.Controllers
                 file.CopyTo(ms);
                 var fileBytes = ms.ToArray();
                 var pic = new PictureModel { ImageName = file.FileName };
-                
                 S3ObjectPutResponse response = await _objectStoreService.ObjectService.PutAsync(fileBytes, file.FileName);
                 var res = await response.ReadResultAsStringAsync();
                 var uri = res.Value;
@@ -53,7 +51,7 @@ namespace WebApplicationLab.Controllers
             //    lbBuckets.Items.Add(bucket.BucketName);
             //}
 
-            return Ok(""); 
+            return Ok("");
         }
 
 
