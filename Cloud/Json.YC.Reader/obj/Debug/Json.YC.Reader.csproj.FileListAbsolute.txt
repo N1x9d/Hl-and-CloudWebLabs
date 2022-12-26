@@ -11,3 +11,16 @@ C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Json.YC.Reader\obj\Debug\J
 C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Json.YC.Reader\obj\Debug\Json.YC.Reader.csproj.CopyComplete
 C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Json.YC.Reader\obj\Debug\Json.YC.Reader.dll
 C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Json.YC.Reader\obj\Debug\Json.YC.Reader.pdb
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Json.YC.Reader.dll.config
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Json.YC.Reader.dll
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Json.YC.Reader.pdb
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Newtonsoft.Json.Bson.pdb
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\bin\Debug\Newtonsoft.Json.Bson.xml
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\obj\Debug\Json.YC.Reader.csproj.AssemblyReference.cache
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\obj\Debug\Json.YC.Reader.csproj.CoreCompileInputs.cache
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\obj\Debug\Json.YC.Reader.csproj.CopyComplete
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\obj\Debug\Json.YC.Reader.dll
+C:\Users\N1x9d\source\repos\N1x9d\Hl-and-CloudWebLabs\Cloud\Json.YC.Reader\obj\Debug\Json.YC.Reader.pdb

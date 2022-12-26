@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rXA25Zwc6bq7rcEVhIh24Y4EBGeB4vXbZTPilKetm0FdDlYur0Kon7/3Q8gHDpjiuRTsyKaEcd28qT6t5SuiYA==",
+  "dgSpecHash": "SXguajGW/K3EshpO9N/5hc50woj8jv1jX5S1lbJTct3jVH8C3fBlbtWl4mrPkykehQTHZIjq7ZgHpiL2XfnCvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\WebApplicationLab\\WebApplicationLab.csproj",
+  "projectFilePath": "C:\\Users\\N1x9d\\Source\\Repos\\N1x9d\\Hl-and-CloudWebLabs\\Hiload\\WebApplicationLab\\WebApplicationLab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\N1x9d\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\N1x9d\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

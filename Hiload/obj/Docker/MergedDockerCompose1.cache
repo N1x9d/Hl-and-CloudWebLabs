@@ -1,8 +1,8 @@
-name: dockercompose13902471660767451278
+name: dockercompose8994112584728663091
 services:
   app:
     build:
-      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs
+      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload
       dockerfile: WebApplicationLab/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
@@ -36,12 +36,12 @@ services:
     tty: true
     volumes:
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\WebApplicationLab
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload\WebApplicationLab
       target: /app
       bind:
         create_host_path: true
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload
       target: /src
       bind:
         create_host_path: true
@@ -76,7 +76,7 @@ services:
         create_host_path: true
   app2:
     build:
-      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs
+      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload
       dockerfile: WebApplicationLab/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
@@ -110,12 +110,12 @@ services:
     tty: true
     volumes:
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\WebApplicationLab
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload\WebApplicationLab
       target: /app
       bind:
         create_host_path: true
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload
       target: /src
       bind:
         create_host_path: true
@@ -159,10 +159,20 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\nginx.conf
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Hiload\nginx.conf
       target: /etc/nginx/nginx.conf
       bind:
         create_host_path: true
+  redis:
+    container_name: redis-1
+    image: redis/redis-stack:latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
 networks:
   default:
-    name: dockercompose13902471660767451278_default
+    name: dockercompose8994112584728663091_default

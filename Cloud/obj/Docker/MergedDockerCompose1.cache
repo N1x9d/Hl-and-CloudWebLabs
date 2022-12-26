@@ -1,8 +1,8 @@
-name: dockercompose13902471660767451278
+name: dockercompose1063609430340376341
 services:
   backend:
     build:
-      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs
+      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Cloud
       dockerfile: WebApplicationLab/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
@@ -36,12 +36,12 @@ services:
     tty: true
     volumes:
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\WebApplicationLab
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Cloud\WebApplicationLab
       target: /app
       bind:
         create_host_path: true
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Cloud
       target: /src
       bind:
         create_host_path: true
@@ -76,7 +76,7 @@ services:
         create_host_path: true
   client:
     build:
-      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\EmberApp
+      context: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Cloud\EmberApp
       dockerfile: Dockerfile
     image: client
     networks:
@@ -97,10 +97,10 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\nginx.conf
+      source: C:\Users\N1x9d\Source\Repos\N1x9d\Hl-and-CloudWebLabs\Cloud\nginx.conf
       target: /etc/nginx/nginx.conf
       bind:
         create_host_path: true
 networks:
   default:
-    name: dockercompose13902471660767451278_default
+    name: dockercompose1063609430340376341_default

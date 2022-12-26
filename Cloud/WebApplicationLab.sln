@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationLab", "WebApp
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1CA66AE8-BD6A-4AD3-B323-53AFE8D58BA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.YC.Reader", "WebApplicationLab\Json.YC.Reader\Json.YC.Reader.csproj", "{85143091-1B70-47D0-A892-8F56B0E15967}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.YC.Reader", "Json.YC.Reader\Json.YC.Reader.csproj", "{85143091-1B70-47D0-A892-8F56B0E15967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -78,11 +78,11 @@ namespace Json.YC.Reader
         }
         #region Options
         //your YC folder
-        private const string folderID = "b...g6d...40....."; 
-        
+        private const string folderID = "b...g6d...40.....";
+
         //your YC token (if not using api key)
-        private const string token = "";// @"....................q-N70KVnBqiHhSiuNThwn8-ACIHeornEDgbWovxED6..........................................-Yyv4JJ_HH-.....................-TfpU1P6JsEf0L4dyZyZ6c...............GN-7qRw2oxqZEZhmSVnfv3uYttBupCfEKl1MXjXaYvHlGeNE............................................";
-        
+        private const string token = "";
+
         //your YC api key (if not using IAM token)
         private const string apikey = @"AQ......NyoK-....";
 
@@ -93,7 +93,7 @@ namespace Json.YC.Reader
         private const string lang = "['ru','en']";
         #endregion
 
-        private static async Task<string> PostRec(string value) //POST JSON request for recognition 
+        private static async Task<string> PostRec(string value) //POST JSON request for recognition
         {
             string text ="";
             using (var client = new HttpClient())
@@ -123,7 +123,7 @@ namespace Json.YC.Reader
         }
         public static async Task<string> PostImage(Bitmap bmp) //bulding body of JSON request
         {
-            Byte[] bytes = ImageToByte(bmp); 
+            Byte[] bytes = ImageToByte(bmp);
             return await PostRec(jSONbody(bytes));
         }
         private static string jSONbody(Byte[] bytes) //body of request
@@ -141,7 +141,8 @@ namespace Json.YC.Reader
                     }]
                 }]
             }";
-        } 
+        }
+
         public static byte[] ImageToByte(Bitmap img) //bitmap to byte array
         {
             byte[] byteArray = new byte[0];
@@ -210,7 +211,7 @@ namespace Json.YC.Reader
             try { x1 = (int)jtLine.SelectToken("boundingBox.vertices[0].x", true); }
             catch { x1 = 0; }
             try { y1 = (int)jtLine.SelectToken("boundingBox.vertices[0].y", true); }
-            catch { y1 = 0; } 
+            catch { y1 = 0; }
             try { x2 = (int)jtLine.SelectToken("boundingBox.vertices[2].x", true); }
             catch { x2 = 0; }
             try { y2 = (int)jtLine.SelectToken("boundingBox.vertices[2].y", true); }
@@ -283,7 +284,7 @@ namespace Json.YC.Reader
             foreach (var jline in jlines) //collecting strings with coordinates
             {
                 foreach (var jw in jline.Children())//all parts
-                {                   
+                {
                     lines.Add(new jLine(jw));
                 }
             }
