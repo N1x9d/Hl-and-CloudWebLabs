@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
@@ -29,15 +29,17 @@ namespace WebApplicationLab.Controllers
         public async Task<IActionResult> Get()
         {
             var db = _redis.GetDatabase();
-            var a = db.StringIncrement("test");
-            var g = db.StringGet("test");
+            var a = db.StringIncrement("model");
+            var g = db.StringGet("model");
             return Ok(Json(g)); 
         }
 
-        //[HttpGet ("/Result")]
-        //public IActionResult GetResult()
-        //{
-        //    return Ok(Json(model.Counter));
-        //}
-    }
+        [HttpGet("/Result")]
+        public IActionResult GetResult()
+        {
+          var db = _redis.GetDatabase();
+          var g = db.StringGet("model");
+          return Ok(Json(g));
+        }
+  }
 }
