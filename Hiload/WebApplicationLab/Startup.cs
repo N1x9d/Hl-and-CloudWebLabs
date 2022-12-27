@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using WebApplicationLab.RabbitMQ;
 
 namespace WebApplicationLab
 {
@@ -21,6 +22,8 @@ namespace WebApplicationLab
         {
 
             services.AddControllers();
+            services.AddScoped<IRabbitMqService, RabbitMqService>();
+            services.AddHostedService<RabbitMqListener>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApplicationLab", Version = "v1" });

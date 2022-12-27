@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
 using System.Threading.Tasks;
+using WebApplicationLab.RabbitMQ;
 
 namespace WebApplicationLab.Controllers
 {
@@ -16,15 +17,15 @@ namespace WebApplicationLab.Controllers
             AbortOnConnectFail = false,
             EndPoints = { "localhost:6379" }
         };
+        private IRabbitMqService _mqService;
         static readonly ConnectionMultiplexer _redis = ConnectionMultiplexer.Connect(option);
 
-        public HomeController()
+        public HomeController(IRabbitMqService mqService)
         {
-            
-
+          _mqService = mqService;
         }
 
- 
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -41,5 +42,14 @@ namespace WebApplicationLab.Controllers
           var g = db.StringGet("model");
           return Ok(Json(g));
         }
+
+    [Route("Send")]
+    [HttpGet]
+    public IActionResult SendMessage(string message)
+    {
+      _mqService.SendMessage(message + DateTime.Now.ToString());
+
+      return Ok("Сообщение отправлено");
+    }
   }
 }
